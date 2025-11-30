@@ -7,13 +7,6 @@ public class Cofrinho {
 	
 	public void adicionar(Moeda moeda) {
         if (moeda != null) {
-        	if (moeda instanceof Real) {
-                System.out.println("Adicionando Real...");
-            } else if (moeda instanceof Dolar) {
-                System.out.println("Adicionando Dólar...");
-            } else if (moeda instanceof Euro) {
-                System.out.println("Adicionando Euro...");
-            }
             listaMoedas.add(moeda);
             System.out.println("Moeda adicionada ao cofrinho :)");
         } else {
@@ -24,6 +17,6 @@ public class Cofrinho {
 	// public remover(Moeda);
 	
 	// public listagemMoedas();
-	
+		
 	// public totalConvertido();
 }
