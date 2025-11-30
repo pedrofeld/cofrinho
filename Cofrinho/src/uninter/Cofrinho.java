@@ -45,5 +45,11 @@ public class Cofrinho {
         }
     }
 		
-	// public totalConvertido();
+	public double totalConvertido() {
+        double total = 0;
+        for (Moeda moeda : listaMoedas) {
+            total += moeda.converter();
+        }
+        return total;
+    }
 }
