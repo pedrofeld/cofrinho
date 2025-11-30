@@ -1,11 +1,13 @@
 package uninter;
 
 abstract public class Moeda {
-	double valor;
+	protected double valor;
 	
-	Moeda(double v){
+	public Moeda(double v){
 		valor=v;
 	}
 	
 	abstract void info();
+	
+	abstract public double converter();
 }
