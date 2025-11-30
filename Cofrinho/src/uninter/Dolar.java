@@ -1,15 +1,19 @@
 package uninter;
 
 public class Dolar extends Moeda {
-
-	Dolar(double v) {
+	private static final double valorDolar = 5.3;
+	
+	public Dolar(double v) {
 		super(v);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
-	void info() {
-		System.out.println("Valor em dólar: " + valor);
-		
+	public void info() {
+		System.out.println("Valor em dólar: " + valor);		
 	}
+	
+	@Override
+    public double converter() {
+        return valor * valorDolar;
+    }
 }

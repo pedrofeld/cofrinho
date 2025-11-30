@@ -1,15 +1,19 @@
 package uninter;
 
 public class Euro extends Moeda {
+	private static final double valorEuro = 6.20;
 
-	Euro(double v) {
+	public Euro(double v) {
 		super(v);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
-	void info() {
+	public void info() {
 		System.out.println("Valor em euro: " + valor);
-		
 	}
+	
+	@Override
+    public double converter() {
+        return valor * valorEuro;
+    }
 }

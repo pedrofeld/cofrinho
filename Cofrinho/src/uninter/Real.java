@@ -2,15 +2,17 @@ package uninter;
 
 public class Real extends Moeda {
 
-	Real(double v) {
+	public Real(double v) {
 		super(v);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	void info() {
+	public void info() {
 		System.out.println("Valor em reais: " + valor);
-		
 	}
-
+	
+	@Override
+    public double converter() {
+        return valor;
+    }
 }
