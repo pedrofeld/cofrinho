@@ -7,7 +7,7 @@ abstract public class Moeda {
 		valor=v;
 	}
 	
-	abstract void info();
+	abstract public void info();
 	
 	abstract public double converter();
 }
