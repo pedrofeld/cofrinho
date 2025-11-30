@@ -1,7 +1,7 @@
 package uninter;
 
 public class Real extends Moeda {
-
+	// Construtor
 	public Real(double v) {
 		super(v);
 	}
@@ -13,6 +13,6 @@ public class Real extends Moeda {
 	
 	@Override
     public double converter() {
-        return valor;
+        return valor; // retorna ele mesmo pq já está em BRL
     }
 }

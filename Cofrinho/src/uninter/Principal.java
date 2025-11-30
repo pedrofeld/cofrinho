@@ -10,6 +10,7 @@ public class Principal {
         
         int opcao;
         
+        // Loop do menu
         do {
             System.out.println("COFRINHO");
             System.out.println("1 - Adicionar Moeda");
@@ -43,9 +44,14 @@ public class Principal {
             
         } while (opcao != 0);
         
-        teclado.close();
+        teclado.close(); // libera os recursos do scanner ao encerrrar o programa
     }
     
+	/*
+	 * Método p fazer a interface
+	 * Solicita e recebe dados
+	 * Cria o objeto e o adc ao cofrinho
+	 */
     private static void adicionarMoeda(Scanner teclado, Cofrinho cofrinho) {
         System.out.println("Escolha Moeda:");
         System.out.println("1 - Real");
@@ -76,6 +82,12 @@ public class Principal {
         cofrinho.adicionar(moeda);
     }
     
+    /*
+     * Método p fazer a interface
+     * Solicita e recebe dados
+     * Cria um novo objeto (temporário) com o valor
+     * Solicita ao método do cofrinho p fazer a remoção (que verifica se existe um objeto com aquele valor e o remove)
+     */
     private static void removerMoeda(Scanner teclado, Cofrinho cofrinho) {
         System.out.println("Escolha Moeda");
         System.out.println("1 - Real");

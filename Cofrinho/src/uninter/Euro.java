@@ -1,8 +1,9 @@
 package uninter;
 
 public class Euro extends Moeda {
-	private static final double valorEuro = 6.20;
+	private static final double valorEuro = 6.20; // cotação fixa para real
 
+	// Construtor
 	public Euro(double v) {
 		super(v);
 	}

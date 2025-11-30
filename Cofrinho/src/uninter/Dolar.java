@@ -1,8 +1,9 @@
 package uninter;
 
 public class Dolar extends Moeda {
-	private static final double valorDolar = 5.3;
+	private static final double valorDolar = 5.3; // cotação fixa para real
 	
+	// Construtor
 	public Dolar(double v) {
 		super(v);
 	}
