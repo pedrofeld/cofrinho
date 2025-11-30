@@ -33,7 +33,17 @@ public class Cofrinho {
         }
     }
 	
-	// public listagemMoedas();
+	public void listagemMoedas() {
+        if (listaMoedas.isEmpty()) {
+            System.out.println("O cofrinho está vazio :(");
+            return;
+        }
+        
+        System.out.println("Moedas no Cofrinho:");
+        for (Moeda moeda : listaMoedas) {
+            moeda.info();
+        }
+    }
 		
 	// public totalConvertido();
 }
